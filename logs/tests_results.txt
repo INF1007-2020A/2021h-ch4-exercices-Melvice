@@ -1,0 +1,46 @@
+test_get_number_of_char (__main__.TestExercice) ... ERROR
+test_get_number_of_words (__main__.TestExercice) ... ERROR
+test_pair (__main__.TestExercice) ... ok
+test_remove_third_char (__main__.TestExercice) ... ok
+test_replace_char (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_get_number_of_char (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 59, in test_get_number_of_char
+    output = [exercice.get_number_of_char(v[0], v[1]) for v in values]
+  File "test_exercice.py", line 59, in <listcomp>
+    output = [exercice.get_number_of_char(v[0], v[1]) for v in values]
+  File "/home/runner/work/2021h-ch4-exercices-Melvice/2021h-ch4-exercices-Melvice/exercice.py", line 32, in get_number_of_char
+    if string[c]== char:
+TypeError: string indices must be integers
+
+======================================================================
+ERROR: test_get_number_of_words (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 75, in test_get_number_of_words
+    output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
+  File "test_exercice.py", line 75, in <listcomp>
+    output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
+  File "/home/runner/work/2021h-ch4-exercices-Melvice/2021h-ch4-exercices-Melvice/exercice.py", line 41, in get_number_of_words
+    for c in (len(sentence)):
+TypeError: 'int' object is not iterable
+
+======================================================================
+ERROR: test_replace_char (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 43, in test_replace_char
+    output = [exercice.replace_char(v[0], v[1], v[2]) for v in values]
+  File "test_exercice.py", line 43, in <listcomp>
+    output = [exercice.replace_char(v[0], v[1], v[2]) for v in values]
+  File "/home/runner/work/2021h-ch4-exercices-Melvice/2021h-ch4-exercices-Melvice/exercice.py", line 21, in replace_char
+    for i in (len(string)):
+TypeError: 'int' object is not iterable
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=3)

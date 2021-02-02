@@ -24,8 +24,8 @@ Traceback (most recent call last):
     output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
   File "test_exercice.py", line 75, in <listcomp>
     output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
-  File "/home/runner/work/2021h-ch4-exercices-Melvice/2021h-ch4-exercices-Melvice/exercice.py", line 41, in get_number_of_words
-    for c in (len(sentence)):
+  File "/home/runner/work/2021h-ch4-exercices-Melvice/2021h-ch4-exercices-Melvice/exercice.py", line 42, in get_number_of_words
+    for i in (len(sentence)):
 TypeError: 'int' object is not iterable
 
 ======================================================================
